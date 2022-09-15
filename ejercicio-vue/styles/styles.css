@@ -186,6 +186,8 @@ $desktop-breakpoint: 45rem;
     justify-content: space-between;
     align-items: center;
     user-select: none;
+    text-transform: uppercase;
+
   }
   
   .list-item__container {
@@ -206,6 +208,7 @@ $desktop-breakpoint: 45rem;
   .list-item__title {
     font-size: 1.8rem;
     margin-bottom: 0.4rem;
+    
   }
   
   .list-item__subtitle {
