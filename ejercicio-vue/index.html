@@ -48,8 +48,8 @@
             </form>
         </div>
         <!-- Apartado 2-->
-        <div v-bind:id="noItems">
-            <span>No items yet!</span>
+        <div>
+            <h2 v-if="!todos.lenght">No items yet!</h2>
         </div>
     </div>
 
