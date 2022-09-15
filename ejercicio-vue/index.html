@@ -35,7 +35,9 @@
                         :class="{'list-item__hide': mustHideTask(todo.done, todo.text)}">
                         <div class="list-item__container">
                             <span :class="{ 'list-item__done': todo.done}">{{ todo.text }}</span>
+                           
                         </div>
+
                         <span @click="removeItem(todo.id)" class="button button-text">Remove</span>
                     </label>
                 </div>
@@ -46,7 +48,9 @@
             </form>
         </div>
         <!-- Apartado 2-->
-
+        <div v-bind:id="noItems">
+            <span>No items yet!</span>
+        </div>
     </div>
 
     <script src="https://unpkg.com/vue@3"></script>
